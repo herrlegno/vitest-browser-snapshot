@@ -1,9 +1,8 @@
 {
-  "name": "vitest-browser-mode-image-screenshot",
+  "name": "vitest-browser-mode-image-snapshot",
   "type": "module",
   "private": true,
   "scripts": {
-    "coverage": "vitest run --coverage",
     "test": "vitest"
   },
   "dependencies": {
@@ -12,16 +11,14 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^14.5.2",
+    "@types/jest-image-snapshot": "^6.4.0",
     "@types/react": "^18.2.79",
     "@vitejs/plugin-react": "^4.3.2",
     "@vitest/browser": "^2.1.1",
     "@vitest/ui": "latest",
+    "jest-image-snapshot": "^6.4.0",
     "playwright": "^1.47.2",
     "vite": "latest",
     "vitest": "latest"
-  },
-  "stackblitz": {
-    "startCommand": "npm run test:ui"
   }
 }

@@ -5,12 +5,12 @@
     "lib": ["esnext", "dom"],
     "module": "node16",
     "moduleResolution": "Bundler",
-    "types": ["@testing-library/jest-dom"],
+    "types": ["@testing-library/jest-dom", "@vitest/browser/providers/playwright"],
     "strict": true,
     "declaration": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
   "include": [
     "**/*.ts",

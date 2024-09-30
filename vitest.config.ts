@@ -1,6 +1,7 @@
 /// <reference types="vitest/config" />
 
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
+import {pageScreenshot} from "./test/commands";
 
 export default defineConfig({
   test: {
@@ -11,6 +12,9 @@ export default defineConfig({
       provider: 'playwright',
       // https://playwright.dev
       providerOptions: {},
+      commands: {
+        pageScreenshot,
+      },
     },
   },
 })
